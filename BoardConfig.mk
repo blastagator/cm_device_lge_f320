@@ -17,7 +17,11 @@
 
 include device/lge/g2-common/BoardConfigCommon.mk
 
-TARGET_KERNEL_CONFIG := lineageos_f320_defconfig
+ifeq ($(WITH_TWRP),true)
+    TARGET_KERNEL_CONFIG := twrp_f320_defconfig
+else
+    TARGET_KERNEL_CONFIG := lineageos_f320_defconfig
+endif
 
 TARGET_OTA_ASSERT_DEVICE := f320,f320s,f320k,g2,galbi
 
