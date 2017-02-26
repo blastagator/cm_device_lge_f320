@@ -5,9 +5,6 @@ TARGET_SCREEN_WIDTH := 1080
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/lge/f320/f320.mk)
 
