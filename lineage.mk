@@ -2,7 +2,7 @@
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-# Inherit some common CM stuff.
+# Inherit some common Lineage stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Enhanced NFC
@@ -13,7 +13,7 @@ $(call inherit-product, device/lge/f320/f320.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := f320
-PRODUCT_NAME := cm_f320
+PRODUCT_NAME := lineage_f320
 PRODUCT_BRAND := LGE
 PRODUCT_MODEL := LG-F320
 PRODUCT_MANUFACTURER := lge
